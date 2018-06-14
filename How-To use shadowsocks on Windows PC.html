@@ -1,0 +1,35 @@
+<h1>﻿Windows上最“简单”的Shadowsocks使用教程</h1>
+
+<blockquote>
+	<p>Shadowsocks是一个安全的socks5代理，旨在保护您的互联网流量。</p>
+	<p>但据不可靠消息透露，中国大陆当局及受管控的运营商已经可以嗅探道Socks5协议</p>
+	<p>更高级别的混淆请考虑ShadowsocksR</p>
+</blockquote>
+
+<p>首先去Github下载一份Windows版的SS，然后解压到你的工作文件夹。</p>
+
+<p>启动它，右键托盘图标在服务器选单中通过扫描二维码的方式添加您的服务器。</p>
+
+<h2>如果您使用的是Chrome浏览器</h2>
+
+<ol>
+	<li>在”<code>控制面板-Internet选项</code>“中，选中“<code>连接</code>”选项卡，在选项卡中打开“<code>局域网设置(L)</code>”</li>
+	<li>勾选“<code>为 LAN 使用代理服务器(这些设置不用于拨号或 VPN 连接)(X)</code>”</li>
+	<li>在“<code>地址(E)</code>”中填入<code>127.0.0.1</code>，<code>端口(T)</code>中填入您在Shadowsocks客户端中设置的本地端口（一般是1080）</li>
+	<li>启动Google Chrome浏览器，登陆您的<a href="https://chrome.google.com/webstore/category/extensions?hl=zh-CN">Chrome网上应用店</a></li>
+	<li>安装Proxy SwitchyOmega，或<a href="https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?hl=zh-CN">点此进行安装</a></li>
+	<li>回到”<code>控制面板-Internet选项</code>“中，选中“<code>连接</code>”选项卡，在选项卡中打开“<code>局域网设置(L)</code>”</li>
+	<li>取消勾选“<code>为 LAN 使用代理服务器(这些设置不用于拨号或 VPN 连接)(X)</code>”</li>
+	<li>安装Proxy SwitchyOmega后，启动它，通常它在浏览器地址栏左侧或在附加菜单内，您也可以通过在Chrome的地址栏输入<code>chrome-extension://padekgcemlokbadohgkifijomclgjgif/options.html</code>来访问</li>
+	<li>在Proxy SwitchyOmega新建一个情景模式，或修改一个情景模式</li>
+	<li>代理协议选择HTTP或sock5，代理服务器填写<code>127.0.0.1</code>，代理端口填写<code>1080</code>，单击应用选项</li>
+	<li>在左侧单击自动切换或auto switch</li>
+	<li>在规则列表设置中选中AutoProxy，网址填<code>https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</code></li>
+	<li>点击立即更新情景模式</li><li>在上方勾选默认情景模式，右侧下拉菜单选择您刚刚手动新建的情景模式</li><li>点击应用选项</li>
+</ol>
+
+<h2>如果您需要针对个别应用的代理</h2>
+
+<p>参考Proxifier的用法，在此不再赘述。</p>
+
+<h1>Enjoy it!</h1>
